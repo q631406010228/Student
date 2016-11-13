@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorRed"
+        android:id="@+id/news">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/back"
+            android:id="@+id/i_back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:onClick="Back"/>
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="128dp"
+            app:srcCompat="@drawable/pika"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/i_ima"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="姓名："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/i_ima"
+            android:layout_toEndOf="@+id/i_ima"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/t_name"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:text="学号："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/t_name"
+            android:id="@+id/t_num"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/t_name"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/t_name"
+            android:layout_toEndOf="@+id/t_name"
+            android:layout_marginStart="5dp"
+            android:id="@+id/name"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/t_num"
+            android:layout_toEndOf="@+id/t_num"
+            android:id="@+id/num"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp" />
+
+        <TextView
+            android:text="编辑"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/t_edit"
+            android:textColor="@color/colorWhite"
+            android:onClick="Edit"
+            android:background="@color/colorPrimary"
+            android:padding="5dp" />
+
+        <TextView
+            android:text="删除"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/t_delete"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:padding="5dp"
+            android:onClick="Delete"/>
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/l_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/news">
+    </ListView>
+</RelativeLayout>

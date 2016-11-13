@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="周次："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t_week"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="140sp"
+        android:layout_marginStart="100sp" />
+
+    <TextView
+        android:text="次数："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t_time"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/t_week"
+        android:layout_alignStart="@+id/t_week"
+        android:layout_marginTop="50dp" />
+
+    <Spinner
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/s_weeks"
+        android:entries="@array/weeks"
+        android:layout_alignBottom="@+id/t_week"
+        android:layout_toEndOf="@+id/t_week" />
+
+    <Spinner
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/s_times"
+        android:entries="@array/times"
+        android:layout_alignBottom="@+id/t_time"
+        android:layout_toEndOf="@+id/t_time" />
+
+    <Button
+        android:text="点名"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_roll"
+        android:textSize="22sp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorRed"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:onClick="roll"/>
+</RelativeLayout>

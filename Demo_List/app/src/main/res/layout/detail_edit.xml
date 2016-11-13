@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="128dp"
+        app:srcCompat="@drawable/pika"
+        android:id="@+id/i_icon"
+        android:onClick="gallery"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名:"
+        android:id="@+id/t_Name"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:textSize="24sp"
+        android:layout_below="@+id/i_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学号:"
+        android:id="@+id/t_Num"
+        android:layout_below="@id/t_Name"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/e_Name"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_toEndOf="@id/t_Name"
+        android:layout_marginStart="20dp"
+        android:layout_alignBottom="@id/t_Name"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/e_Num"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_toEndOf="@id/t_Num"
+        android:layout_marginStart="20dp"
+        android:layout_alignBottom="@id/t_Num"/>
+
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnSave"
+        android:text="保存"
+        android:background="@color/colorRed"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:onClick="cSava"/>
+
+</RelativeLayout>

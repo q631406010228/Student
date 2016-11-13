@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/colorRed">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="128dp"
+            app:srcCompat="@drawable/me"
+            android:id="@+id/icon"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="false" />
+    </RelativeLayout>
+
+    <TextView
+        android:text="皓爷"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/t_name"
+        android:textSize="24sp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorRed"
+        android:gravity="center"
+        android:layout_marginTop="1dp" />
+
+    <TextView
+        android:text="631406010228"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/t_num"
+        android:textSize="24sp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorRed"
+        android:gravity="center"
+        android:layout_marginTop="1dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        >
+        <Button
+            android:text="请假"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/b_leave"
+            android:layout_marginStart="60dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:background="@color/colororange"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"/>
+
+        <Button
+            android:text="到席"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/b_reach"
+            android:layout_marginEnd="60dp"
+            android:textSize="24sp"
+            android:background="@color/colororange"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="早退"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:id="@+id/b_leave_early"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:textSize="24sp"
+            android:layout_marginStart="7dp"
+            android:layout_weight="1"
+            android:onClick="onClick"/>
+
+        <Button
+            android:text="旷课"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:id="@+id/b_skip"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:textSize="24sp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:onClick="onClick"/>
+
+        <Button
+            android:text="迟到"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:id="@+id/b_late"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:textSize="24sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+</LinearLayout>

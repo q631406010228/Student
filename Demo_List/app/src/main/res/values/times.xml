@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="times">
+        <item>第一次课</item>
+        <item>第二次课</item>
+    </string-array>
+</resources>
